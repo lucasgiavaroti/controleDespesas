@@ -3,9 +3,7 @@ package br.com.lucasgiavaroti;
 import br.com.lucasgiavaroti.dao.DespesaDAO;
 import br.com.lucasgiavaroti.model.Categoria;
 import br.com.lucasgiavaroti.model.Despesa;
-import org.w3c.dom.ls.LSOutput;
 
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
@@ -27,6 +25,7 @@ public class Application {
         System.out.println("2 - Alterar despesa ");
         System.out.println("3 - Excluir despesa ");
         System.out.println("4 - Listar despesas ");
+        System.out.println("5 - Consultar valor total");
 
         System.out.print("\nDigite a opção: ");
         option = Integer.parseInt(scan.nextLine());
@@ -42,8 +41,11 @@ public class Application {
                 despesa.setData(LocalDate.parse(scan.nextLine()));
                 System.out.print("Digite o valor: ");
                 despesa.setValor(Double.parseDouble(scan.nextLine()));
-                System.out.print("Digite a categoria: ");
-                despesa.setCategoria(Categoria.valueOf(scan.nextLine()));
+                System.out.print("""
+                        \nCategorias -> ALIMENTACAO / EDUCACAO / SAUDE / TRANSPORTE / MORADIA / OUTROS
+                        """);
+                System.out.print("\nDigite a categoria desejada: ");
+                despesa.setCategoria(Categoria.valueOf(scan.nextLine().toUpperCase()));
 
                 scan.close();
 
@@ -105,18 +107,26 @@ public class Application {
                 int optionList = Integer.parseInt(scan.nextLine());
 
                 if(optionList == 1){
-                    System.out.println("Todas as despesas.");
                     List<Despesa> despesasList = dao.findAll();
-                    for(Despesa d : despesasList){
-                        System.out.println(d);
-                        System.out.println("=======================");
-                    }
+                   if(!despesasList.isEmpty()) {
+                       System.out.println("Todas as despesas.");
+                       for(Despesa d : despesasList){
+                           System.out.println(d);
+                           System.out.println("=======================");
+                       }
+                   }else{
+                       System.out.println("Não há despesas cadastradas");
+                   }
                 }else if(optionList == 2){
                     System.out.print("Digite a categoria desejada: ");
                     List<Despesa> despesasList = dao.findByCategoria(Categoria.valueOf(scan.nextLine()));
-                    for(Despesa d : despesasList){
-                        System.out.println(d);
-                        System.out.println("=======================");
+                    if(!despesasList.isEmpty()) {
+                        for(Despesa d : despesasList){
+                            System.out.println(d);
+                            System.out.println("=======================");
+                        }
+                    }else{
+                       System.out.println("Não há despesas cadastradas com essa categoria.");
                     }
                 }else if(optionList == 3){
                     System.out.print("Digite o ID desejado: ");
@@ -128,8 +138,21 @@ public class Application {
                     }
                 }
                 break;
-                default:
-                    System.out.println("Opção inválida, digite novamente!");
+
+            case 5:
+
+                List<Despesa> despesasList = dao.findAll();
+
+                if(!despesasList.isEmpty()) {
+                    System.out.printf("Valor total das despesas cadastradas: R$%.2f", dao.valorTotal());
+                }else{
+                    System.out.println("Não há despesas cadastradas");
+                }
+                break;
+
+            default:
+                System.out.println("Opção inválida, digite novamente!");
+                break;
         }
     }
 }

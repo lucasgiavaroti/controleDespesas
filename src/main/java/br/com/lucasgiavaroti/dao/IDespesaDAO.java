@@ -11,6 +11,9 @@ public interface IDespesaDAO {
     Despesa update  (Despesa despesa);
     void delete (Long id);
     List<Despesa> findAll();
+
+    double valorTotal();
+
     Optional<Despesa> findById(Long id);
     List<Despesa> findByCategoria(Categoria categoria);
 }

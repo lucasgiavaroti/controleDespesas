@@ -106,6 +106,26 @@ public class DespesaDAO implements IDespesaDAO{
     }
 
     @Override
+    public double valorTotal(){
+        double valorTotal = 0.0;
+        String sql = "SELECT valor FROM Despesas";
+
+        try(Connection connection = ConnectionFactory.getConnection()){
+
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+
+            while(rs.next()){
+                valorTotal += rs.getDouble("valor");
+            }
+
+        }catch(SQLException e){
+            throw new RuntimeException(e);
+        }
+        return valorTotal;
+    }
+
+    @Override
     public Optional<Despesa> findById(Long id) {
         String sql = "SELECT id, descricao, data, valor, categoria FROM Despesas WHERE id = ?";
 
