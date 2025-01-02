@@ -1,0 +1,26 @@
+package br.com.lucasgiavaroti.swingUI;
+
+import javax.swing.*;
+import java.util.Objects;
+
+public class Menu extends JFrame {
+
+    ImageIcon imageMenu = new ImageIcon(Objects.requireNonNull(Menu.class.getResource("/image.png")));
+
+    private JPanel jPanel1;
+    private JLabel jLImage;
+
+    public Menu() {
+        setContentPane(jPanel1);
+        setTitle("Controle de Despesas");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(1366, 768);
+        setLocationRelativeTo(null);
+        setVisible(true);
+        jLImage.setIcon(imageMenu);
+    }
+
+    public static void main(String[] args) {
+        new Menu();
+    }
+}
