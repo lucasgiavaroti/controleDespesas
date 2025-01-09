@@ -48,7 +48,6 @@ public class Cadastrar extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
 
         jDialog1.setTitle("Sucesso");
-        jDialog1.setMaximumSize(new java.awt.Dimension(400, 300));
         jDialog1.setMinimumSize(new java.awt.Dimension(400, 300));
         jDialog1.setResizable(false);
 
@@ -129,7 +128,7 @@ public class Cadastrar extends javax.swing.JFrame {
         });
 
         jTextField2.setForeground(java.awt.Color.gray);
-        jTextField2.setText("Ex: 2024/12/01");
+        jTextField2.setText("Ex: 2024-12-31");
         jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTextField2FocusGained(evt);
@@ -246,8 +245,8 @@ public class Cadastrar extends javax.swing.JFrame {
     private void jTextField2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusLost
         // TODO add your handling code here:
        if(jTextField2.getText().isEmpty()){
-            jTextField2.setText("Ex: 2024/12/01");
-        jTextField2.setForeground(Color.gray);
+         jTextField2.setText("Ex: 2024-12-31");
+         jTextField2.setForeground(Color.gray);
        }
     }//GEN-LAST:event_jTextField2FocusLost
 
