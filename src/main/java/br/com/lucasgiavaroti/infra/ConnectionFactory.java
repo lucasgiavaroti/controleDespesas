@@ -10,9 +10,7 @@ public class ConnectionFactory {
 
     public static Connection getConnection() {
         try {
-//            System.out.println("Conectado ao banco de dados com sucesso!");
-            System.out.println();
-            return DriverManager.getConnection("jdbc:postgresql://localhost/DespesasDB", "postgres", "18072004");
+            return DriverManager.getConnection("jdbc:postgresql://localhost/DespesasDB", "postgres", "postgres");
         } catch (SQLException e) {
             System.out.println("Erro ao conectar-se ao Banco de Dados: "+e.getMessage());
             throw new RuntimeException(e);
