@@ -22,17 +22,17 @@ public class Alterar extends javax.swing.JFrame {
      */
     public Alterar() {
         initComponents();
-        jLabel5.setVisible(false);
-        jLabel6.setVisible(false);
-        jLabel7.setVisible(false);
-        jLabel8.setVisible(false);
-        jLabel9.setVisible(false);
-        jTextField1.setVisible(false);
-        jTextField3.setVisible(false);
-        jTextField4.setVisible(false);
-        jComboBox1.setVisible(false);
-        jButton2.setVisible(false);
-        jButton4.setVisible(false);
+        jlParagrafo.setVisible(false);
+        jlValor.setVisible(false);
+        jlCategoria.setVisible(false);
+        jlDescricao.setVisible(false);
+        jlData.setVisible(false);
+        jtfDate.setVisible(false);
+        jtfDesc.setVisible(false);
+        jtfValor.setVisible(false);
+        jcbCat.setVisible(false);
+        jbVoltar2.setVisible(false);
+        jbAlterar.setVisible(false);
     }
 
     /**
@@ -44,154 +44,158 @@ public class Alterar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDialog1 = new javax.swing.JDialog();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
-        jDialog2 = new javax.swing.JDialog();
-        jLabel10 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jDialog3 = new javax.swing.JDialog();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jButton2 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jdDespesaNaoEncontrada = new javax.swing.JDialog();
+        jlParagrafo1 = new javax.swing.JLabel();
+        jlParagrafo2 = new javax.swing.JLabel();
+        jbOkDialogo01 = new javax.swing.JButton();
+        jdDespesaSucesso = new javax.swing.JDialog();
+        jlParagrafo3 = new javax.swing.JLabel();
+        jbOkDialogo02 = new javax.swing.JButton();
+        jdErro = new javax.swing.JDialog();
+        jlParagrafo4 = new javax.swing.JLabel();
+        jlParagrafo5 = new javax.swing.JLabel();
+        jbOkDialogo03 = new javax.swing.JButton();
+        jlTitulo = new javax.swing.JLabel();
+        jlSubTitulo = new javax.swing.JLabel();
+        jtfId = new javax.swing.JTextField();
+        jbBuscar = new javax.swing.JButton();
+        jlParagrafo = new javax.swing.JLabel();
+        jlValor = new javax.swing.JLabel();
+        jlCategoria = new javax.swing.JLabel();
+        jlData = new javax.swing.JLabel();
+        jlDescricao = new javax.swing.JLabel();
+        jtfDate = new javax.swing.JTextField();
+        jtfDesc = new javax.swing.JTextField();
+        jtfValor = new javax.swing.JTextField();
+        jcbCat = new javax.swing.JComboBox<>();
+        jbVoltar2 = new javax.swing.JButton();
+        jbVoltar = new javax.swing.JButton();
+        jbAlterar = new javax.swing.JButton();
 
-        jDialog1.setTitle("Despesa não encontrada");
-        jDialog1.setMaximumSize(new java.awt.Dimension(400, 300));
-        jDialog1.setMinimumSize(new java.awt.Dimension(400, 300));
+        jdDespesaNaoEncontrada.setTitle("Despesa não encontrada");
+        jdDespesaNaoEncontrada.setMaximumSize(new java.awt.Dimension(400, 300));
+        jdDespesaNaoEncontrada.setMinimumSize(new java.awt.Dimension(400, 300));
 
-        jLabel3.setText("Despesa não encontrada!");
+        jlParagrafo1.setForeground(new java.awt.Color(204, 204, 0));
+        jlParagrafo1.setText("Despesa não encontrada!");
 
-        jLabel4.setText("Por favor, verifique o ID e digite novamente.");
+        jlParagrafo2.setText("Por favor, verifique o ID e digite novamente.");
 
-        jButton3.setText("Ok");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jbOkDialogo01.setText("Ok");
+        jbOkDialogo01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jbOkDialogo01ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
-        jDialog1.getContentPane().setLayout(jDialog1Layout);
-        jDialog1Layout.setHorizontalGroup(
-            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog1Layout.createSequentialGroup()
+        javax.swing.GroupLayout jdDespesaNaoEncontradaLayout = new javax.swing.GroupLayout(jdDespesaNaoEncontrada.getContentPane());
+        jdDespesaNaoEncontrada.getContentPane().setLayout(jdDespesaNaoEncontradaLayout);
+        jdDespesaNaoEncontradaLayout.setHorizontalGroup(
+            jdDespesaNaoEncontradaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jdDespesaNaoEncontradaLayout.createSequentialGroup()
                 .addContainerGap(100, Short.MAX_VALUE)
-                .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog1Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                .addGroup(jdDespesaNaoEncontradaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jdDespesaNaoEncontradaLayout.createSequentialGroup()
+                        .addComponent(jlParagrafo1)
                         .addGap(100, 100, 100))
-                    .addComponent(jLabel4))
+                    .addComponent(jlParagrafo2))
                 .addGap(86, 86, 86))
-            .addGroup(jDialog1Layout.createSequentialGroup()
+            .addGroup(jdDespesaNaoEncontradaLayout.createSequentialGroup()
                 .addGap(152, 152, 152)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jbOkDialogo01, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jDialog1Layout.setVerticalGroup(
-            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialog1Layout.createSequentialGroup()
+        jdDespesaNaoEncontradaLayout.setVerticalGroup(
+            jdDespesaNaoEncontradaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdDespesaNaoEncontradaLayout.createSequentialGroup()
                 .addGap(89, 89, 89)
-                .addComponent(jLabel3)
+                .addComponent(jlParagrafo1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel4)
+                .addComponent(jlParagrafo2)
                 .addGap(18, 18, 18)
-                .addComponent(jButton3)
+                .addComponent(jbOkDialogo01)
                 .addContainerGap(126, Short.MAX_VALUE))
         );
 
-        jDialog2.setTitle("Despesa alterada");
-        jDialog2.setMaximumSize(new java.awt.Dimension(400, 300));
-        jDialog2.setMinimumSize(new java.awt.Dimension(400, 300));
+        jdDespesaSucesso.setTitle("Despesa alterada");
+        jdDespesaSucesso.setMaximumSize(new java.awt.Dimension(400, 300));
+        jdDespesaSucesso.setMinimumSize(new java.awt.Dimension(400, 300));
 
-        jLabel10.setText("Despesa Alterada com Sucesso!");
+        jlParagrafo3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jlParagrafo3.setForeground(new java.awt.Color(102, 204, 0));
+        jlParagrafo3.setText("Despesa Alterada com Sucesso!");
 
-        jButton5.setText("Ok");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        jbOkDialogo02.setText("Ok");
+        jbOkDialogo02.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                jbOkDialogo02ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jDialog2Layout = new javax.swing.GroupLayout(jDialog2.getContentPane());
-        jDialog2.getContentPane().setLayout(jDialog2Layout);
-        jDialog2Layout.setHorizontalGroup(
-            jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialog2Layout.createSequentialGroup()
-                .addGroup(jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDialog2Layout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addComponent(jLabel10))
-                    .addGroup(jDialog2Layout.createSequentialGroup()
+        javax.swing.GroupLayout jdDespesaSucessoLayout = new javax.swing.GroupLayout(jdDespesaSucesso.getContentPane());
+        jdDespesaSucesso.getContentPane().setLayout(jdDespesaSucessoLayout);
+        jdDespesaSucessoLayout.setHorizontalGroup(
+            jdDespesaSucessoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdDespesaSucessoLayout.createSequentialGroup()
+                .addGroup(jdDespesaSucessoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jdDespesaSucessoLayout.createSequentialGroup()
                         .addGap(151, 151, 151)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(121, Short.MAX_VALUE))
+                        .addComponent(jbOkDialogo02, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jdDespesaSucessoLayout.createSequentialGroup()
+                        .addGap(103, 103, 103)
+                        .addComponent(jlParagrafo3)))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
-        jDialog2Layout.setVerticalGroup(
-            jDialog2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialog2Layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addComponent(jLabel10)
-                .addGap(26, 26, 26)
-                .addComponent(jButton5)
-                .addContainerGap(122, Short.MAX_VALUE))
+        jdDespesaSucessoLayout.setVerticalGroup(
+            jdDespesaSucessoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdDespesaSucessoLayout.createSequentialGroup()
+                .addGap(111, 111, 111)
+                .addComponent(jlParagrafo3)
+                .addGap(28, 28, 28)
+                .addComponent(jbOkDialogo02)
+                .addContainerGap(118, Short.MAX_VALUE))
         );
 
-        jDialog3.setTitle("Despesa não alterada");
-        jDialog3.setMaximumSize(new java.awt.Dimension(400, 300));
-        jDialog3.setPreferredSize(new java.awt.Dimension(400, 300));
+        jdErro.setTitle("Despesa não alterada");
+        jdErro.setMaximumSize(new java.awt.Dimension(400, 300));
+        jdErro.setPreferredSize(new java.awt.Dimension(400, 300));
 
-        jLabel11.setText("A Despesa NÃO foi alterada com sucesso :(");
+        jlParagrafo4.setForeground(new java.awt.Color(204, 0, 0));
+        jlParagrafo4.setText("A Despesa NÃO foi alterada com sucesso :(");
 
-        jLabel12.setText("Por favor, verifique os campos e tente novamente.");
+        jlParagrafo5.setText("Por favor, verifique os campos e tente novamente.");
 
-        jButton7.setText("Ok");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        jbOkDialogo03.setText("Ok");
+        jbOkDialogo03.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                jbOkDialogo03ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jDialog3Layout = new javax.swing.GroupLayout(jDialog3.getContentPane());
-        jDialog3.getContentPane().setLayout(jDialog3Layout);
-        jDialog3Layout.setHorizontalGroup(
-            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDialog3Layout.createSequentialGroup()
-                .addContainerGap(50, Short.MAX_VALUE)
-                .addGroup(jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12))
-                .addGap(85, 85, 85))
-            .addGroup(jDialog3Layout.createSequentialGroup()
+        javax.swing.GroupLayout jdErroLayout = new javax.swing.GroupLayout(jdErro.getContentPane());
+        jdErro.getContentPane().setLayout(jdErroLayout);
+        jdErroLayout.setHorizontalGroup(
+            jdErroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdErroLayout.createSequentialGroup()
                 .addGap(158, 158, 158)
-                .addComponent(jButton7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jbOkDialogo03)
+                .addContainerGap(170, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jdErroLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jdErroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jlParagrafo4)
+                    .addComponent(jlParagrafo5))
+                .addGap(60, 60, 60))
         );
-        jDialog3Layout.setVerticalGroup(
-            jDialog3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialog3Layout.createSequentialGroup()
+        jdErroLayout.setVerticalGroup(
+            jdErroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdErroLayout.createSequentialGroup()
                 .addGap(89, 89, 89)
-                .addComponent(jLabel11)
+                .addComponent(jlParagrafo4)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel12)
+                .addComponent(jlParagrafo5)
                 .addGap(27, 27, 27)
-                .addComponent(jButton7)
+                .addComponent(jbOkDialogo03)
                 .addContainerGap(111, Short.MAX_VALUE))
         );
 
@@ -201,53 +205,53 @@ public class Alterar extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(800, 500));
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
-        jLabel1.setText("Alterar Despesa");
+        jlTitulo.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
+        jlTitulo.setText("Alterar Despesa");
 
-        jLabel2.setText("Digite o ID da despesa que deseja alterar:");
+        jlSubTitulo.setText("Digite o ID da despesa que deseja alterar:");
 
-        jButton1.setText("Buscar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jbBuscar.setText("Buscar");
+        jbBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jbBuscarActionPerformed(evt);
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel5.setText("Por favor, atualize os campos com os novos dados: ");
+        jlParagrafo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jlParagrafo.setText("Por favor, atualize os campos com os novos dados: ");
 
-        jLabel6.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel6.setText("Valor: (R$)");
+        jlValor.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jlValor.setText("Valor: (R$)");
 
-        jLabel7.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel7.setText("Categoria: ");
+        jlCategoria.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jlCategoria.setText("Categoria: ");
 
-        jLabel9.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel9.setText("Data:");
+        jlData.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jlData.setText("Data:");
 
-        jLabel8.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel8.setText("Descrição: ");
+        jlDescricao.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jlDescricao.setText("Descrição: ");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MORADIA", "SAUDE", "EDUCACAO", "ALIMENTACAO", "TRANSPORTE", "OUTROS" }));
+        jcbCat.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MORADIA", "SAUDE", "EDUCACAO", "ALIMENTACAO", "TRANSPORTE", "OUTROS" }));
 
-        jButton2.setText("Voltar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jbVoltar2.setText("Voltar");
+        jbVoltar2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jbVoltar2ActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Voltar");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        jbVoltar.setText("Voltar");
+        jbVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                jbVoltarActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Alterar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jbAlterar.setText("Alterar");
+        jbAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jbAlterarActionPerformed(evt);
             }
         });
 
@@ -258,157 +262,182 @@ public class Alterar extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton6))
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5)
+                    .addComponent(jlSubTitulo)
+                    .addComponent(jlTitulo)
+                    .addComponent(jlParagrafo)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel8)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
-                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jlCategoria)
+                            .addComponent(jlDescricao)
+                            .addComponent(jtfDesc, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                            .addComponent(jcbCat, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(98, 98, 98)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel9)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jtfValor, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jlValor)
+                            .addComponent(jlData)
+                            .addComponent(jtfDate, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jbVoltar2, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jtfId, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jbBuscar)
+                            .addGap(18, 18, 18)
+                            .addComponent(jbVoltar))))
                 .addContainerGap(173, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jLabel1)
+                .addComponent(jlTitulo)
                 .addGap(24, 24, 24)
-                .addComponent(jLabel2)
+                .addComponent(jlSubTitulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jtfId, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton6))
+                    .addComponent(jbBuscar)
+                    .addComponent(jbVoltar))
                 .addGap(48, 48, 48)
-                .addComponent(jLabel5)
+                .addComponent(jlParagrafo)
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel8))
+                    .addComponent(jlValor)
+                    .addComponent(jlDescricao))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtfDesc, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtfValor, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel9))
+                    .addComponent(jlCategoria)
+                    .addComponent(jlData))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtfDate, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jcbCat, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jbAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbVoltar2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jbBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBuscarActionPerformed
         // TODO add your handling code here:
         DespesaDAO dao = new DespesaDAO();
-        Optional<Despesa> despesaOptional = dao.findById(Long.valueOf(jTextField2.getText()));
+        Optional<Despesa> despesaOptional = dao.findById(Long.valueOf(jtfId.getText()));
         
         if(despesaOptional.isEmpty()){
-            jDialog1.setVisible(true);
-            jDialog1.setLocationRelativeTo(null);
+            jdDespesaNaoEncontrada.setVisible(true);
+            jdDespesaNaoEncontrada.setLocationRelativeTo(null);
         }else{
-            jButton6.setVisible(false);
-            jLabel5.setVisible(true);
-            jLabel6.setVisible(true);
-            jLabel7.setVisible(true);
-            jLabel8.setVisible(true);
-            jLabel9.setVisible(true);
-            jTextField1.setVisible(true);
-            jTextField3.setVisible(true);
-            jTextField4.setVisible(true);
-            jComboBox1.setVisible(true);
-            jButton2.setVisible(true);
-            jButton4.setVisible(true);
+            jbVoltar.setVisible(false);
+            jlParagrafo.setVisible(true);
+            
+            jlValor.setVisible(true);
+            jlCategoria.setVisible(true);
+            jlDescricao.setVisible(true);
+            jlData.setVisible(true);
+            
+            jtfDate.setText(String.valueOf(despesaOptional.get().getData()));
+            jtfDate.setVisible(true);
+            
+            jtfDesc.setText(despesaOptional.get().getDescricao());
+            jtfDesc.setVisible(true);
+            
+            jtfValor.setText(String.valueOf(despesaOptional.get().getValor()));
+            jtfValor.setVisible(true);
+            
+            jcbCat.setSelectedItem(despesaOptional.get().getCategoria());
+            jcbCat.setVisible(true);
+            
+            jbVoltar2.setVisible(true);
+            jbAlterar.setVisible(true);
             
         }
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jbBuscarActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jbOkDialogo01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbOkDialogo01ActionPerformed
         // TODO add your handling code here:
-        jDialog1.dispose();
-         jLabel5.setVisible(false);
-        jLabel6.setVisible(false);
-        jLabel7.setVisible(false);
-        jLabel8.setVisible(false);
-        jLabel9.setVisible(false);
-        jTextField1.setVisible(false);
-        jTextField3.setVisible(false);
-        jTextField4.setVisible(false);
-        jComboBox1.setVisible(false);
-        jButton2.setVisible(false);
-        jButton4.setVisible(false);
-        jButton6.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        jdDespesaNaoEncontrada.dispose();
+        jlParagrafo.setVisible(false);
+        jlValor.setVisible(false);
+        jlCategoria.setVisible(false);
+        jlDescricao.setVisible(false);
+        jlData.setVisible(false);
+        jtfDate.setVisible(false);
+        jtfDesc.setVisible(false);
+        jtfValor.setVisible(false);
+        jcbCat.setVisible(false);
+        jbVoltar2.setVisible(false);
+        jbAlterar.setVisible(false);
+        jbVoltar.setVisible(true);
+        jtfId.setText("");
+    }//GEN-LAST:event_jbOkDialogo01ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void jbVoltar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbVoltar2ActionPerformed
         // TODO add your handling code here:
         this.dispose();
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_jbVoltar2ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jbVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbVoltarActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_jbVoltarActionPerformed
+
+    private void jbAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbAlterarActionPerformed
         // TODO add your handling code here:
         
          DespesaDAO dao = new DespesaDAO();
         
-         Optional<Despesa> despesaOptional = dao.findById(Long.valueOf(jTextField2.getText()));
+         Optional<Despesa> despesaOptional = dao.findById(Long.valueOf(jtfId.getText()));
         
-         despesaOptional.get().setDescricao(jTextField3.getText());
-         despesaOptional.get().setValor(Double.valueOf(jTextField4.getText()));
-         despesaOptional.get().setCategoria(Categoria.valueOf(jComboBox1.getSelectedItem().toString()));
-         despesaOptional.get().setData(LocalDate.parse(jTextField1.getText()));
+         despesaOptional.get().setDescricao(jtfDesc.getText());
+         despesaOptional.get().setValor(Double.valueOf(jtfValor.getText()));
+         despesaOptional.get().setCategoria(Categoria.valueOf(jcbCat.getSelectedItem().toString()));
+         despesaOptional.get().setData(LocalDate.parse(jtfDate.getText()));
         
           try{
                 dao.update(despesaOptional.get());
-                jDialog2.setLocationRelativeTo(null);
-                jDialog2.setVisible(true);
+                jdDespesaSucesso.setLocationRelativeTo(null);
+                jdDespesaSucesso.setVisible(true);
          }catch(RuntimeException e){
-                jDialog3.setLocationRelativeTo(null);
-                jDialog3.setVisible(true);
+                jdErro.setLocationRelativeTo(null);
+                jdErro.setVisible(true);
             }
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_jbAlterarActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jbOkDialogo02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbOkDialogo02ActionPerformed
         // TODO add your handling code here:
-        jDialog2.dispose();
-    }//GEN-LAST:event_jButton5ActionPerformed
+        jdDespesaSucesso.dispose();
+        jlParagrafo.setVisible(false);
+        jlValor.setVisible(false);
+        jlCategoria.setVisible(false);
+        jlDescricao.setVisible(false);
+        jlData.setVisible(false);
+        jtfDate.setVisible(false);
+        jtfDesc.setVisible(false);
+        jtfValor.setVisible(false);
+        jcbCat.setVisible(false);
+        jbVoltar2.setVisible(false);
+        jbAlterar.setVisible(false);
+        jbVoltar.setVisible(true);
+        jtfId.setText("");
+    }//GEN-LAST:event_jbOkDialogo02ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void jbOkDialogo03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbOkDialogo03ActionPerformed
         // TODO add your handling code here:
-        jDialog3.dispose();
-    }//GEN-LAST:event_jButton7ActionPerformed
+        jdErro.dispose();
+    }//GEN-LAST:event_jbOkDialogo03ActionPerformed
 
     
     /**
@@ -448,32 +477,32 @@ public class Alterar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JDialog jDialog1;
-    private javax.swing.JDialog jDialog2;
-    private javax.swing.JDialog jDialog3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JButton jbAlterar;
+    private javax.swing.JButton jbBuscar;
+    private javax.swing.JButton jbOkDialogo01;
+    private javax.swing.JButton jbOkDialogo02;
+    private javax.swing.JButton jbOkDialogo03;
+    private javax.swing.JButton jbVoltar;
+    private javax.swing.JButton jbVoltar2;
+    private javax.swing.JComboBox<String> jcbCat;
+    private javax.swing.JDialog jdDespesaNaoEncontrada;
+    private javax.swing.JDialog jdDespesaSucesso;
+    private javax.swing.JDialog jdErro;
+    private javax.swing.JLabel jlCategoria;
+    private javax.swing.JLabel jlData;
+    private javax.swing.JLabel jlDescricao;
+    private javax.swing.JLabel jlParagrafo;
+    private javax.swing.JLabel jlParagrafo1;
+    private javax.swing.JLabel jlParagrafo2;
+    private javax.swing.JLabel jlParagrafo3;
+    private javax.swing.JLabel jlParagrafo4;
+    private javax.swing.JLabel jlParagrafo5;
+    private javax.swing.JLabel jlSubTitulo;
+    private javax.swing.JLabel jlTitulo;
+    private javax.swing.JLabel jlValor;
+    private javax.swing.JTextField jtfDate;
+    private javax.swing.JTextField jtfDesc;
+    private javax.swing.JTextField jtfId;
+    private javax.swing.JTextField jtfValor;
     // End of variables declaration//GEN-END:variables
 }

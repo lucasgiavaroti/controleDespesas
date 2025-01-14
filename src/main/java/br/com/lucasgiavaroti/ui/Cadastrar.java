@@ -32,58 +32,58 @@ public class Cadastrar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jDialog1 = new javax.swing.JDialog();
-        jLabel6 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField3 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField1 = new javax.swing.JTextField();
+        jdCadastroSucesso = new javax.swing.JDialog();
+        jlSucesso = new javax.swing.JLabel();
+        jbOkCadastro = new javax.swing.JButton();
+        jlTitulo = new javax.swing.JLabel();
+        jlDescricao = new javax.swing.JLabel();
+        jlData = new javax.swing.JLabel();
+        jlCategoria = new javax.swing.JLabel();
+        jcbCat = new javax.swing.JComboBox<>();
+        jtDesc = new javax.swing.JTextField();
+        jlValor = new javax.swing.JLabel();
+        jbCadastrar = new javax.swing.JButton();
+        jbVoltar = new javax.swing.JButton();
+        jtDate = new javax.swing.JTextField();
+        jtVlr = new javax.swing.JTextField();
 
-        jDialog1.setTitle("Sucesso");
-        jDialog1.setMinimumSize(new java.awt.Dimension(400, 300));
-        jDialog1.setResizable(false);
+        jdCadastroSucesso.setTitle("Sucesso");
+        jdCadastroSucesso.setMinimumSize(new java.awt.Dimension(400, 300));
+        jdCadastroSucesso.setResizable(false);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jLabel6.setForeground(javax.swing.UIManager.getDefaults().getColor("Actions.Green"));
-        jLabel6.setText("Despesa Cadastrada com Sucesso!");
+        jlSucesso.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jlSucesso.setForeground(new java.awt.Color(51, 204, 0));
+        jlSucesso.setText("Despesa Cadastrada com Sucesso!");
 
-        jButton4.setText("Ok");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jbOkCadastro.setText("Ok");
+        jbOkCadastro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jbOkCadastroActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jDialog1Layout = new javax.swing.GroupLayout(jDialog1.getContentPane());
-        jDialog1.getContentPane().setLayout(jDialog1Layout);
-        jDialog1Layout.setHorizontalGroup(
-            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialog1Layout.createSequentialGroup()
-                .addGroup(jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jDialog1Layout.createSequentialGroup()
-                        .addGap(133, 133, 133)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jDialog1Layout.createSequentialGroup()
+        javax.swing.GroupLayout jdCadastroSucessoLayout = new javax.swing.GroupLayout(jdCadastroSucesso.getContentPane());
+        jdCadastroSucesso.getContentPane().setLayout(jdCadastroSucessoLayout);
+        jdCadastroSucessoLayout.setHorizontalGroup(
+            jdCadastroSucessoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdCadastroSucessoLayout.createSequentialGroup()
+                .addGroup(jdCadastroSucessoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jdCadastroSucessoLayout.createSequentialGroup()
                         .addGap(90, 90, 90)
-                        .addComponent(jLabel6)))
+                        .addComponent(jlSucesso))
+                    .addGroup(jdCadastroSucessoLayout.createSequentialGroup()
+                        .addGap(156, 156, 156)
+                        .addComponent(jbOkCadastro)))
                 .addContainerGap(100, Short.MAX_VALUE))
         );
-        jDialog1Layout.setVerticalGroup(
-            jDialog1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jDialog1Layout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel6)
-                .addGap(27, 27, 27)
-                .addComponent(jButton4)
-                .addContainerGap(110, Short.MAX_VALUE))
+        jdCadastroSucessoLayout.setVerticalGroup(
+            jdCadastroSucessoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdCadastroSucessoLayout.createSequentialGroup()
+                .addGap(107, 107, 107)
+                .addComponent(jlSucesso)
+                .addGap(28, 28, 28)
+                .addComponent(jbOkCadastro)
+                .addContainerGap(122, Short.MAX_VALUE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -92,60 +92,60 @@ public class Cadastrar extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(800, 500));
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
-        jLabel1.setText("Cadastrar Despesa");
+        jlTitulo.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
+        jlTitulo.setText("Cadastrar Despesa");
 
-        jLabel2.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jLabel2.setText("Descrição:");
+        jlDescricao.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jlDescricao.setText("Descrição:");
 
-        jLabel3.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jLabel3.setLabelFor(jTextField1);
-        jLabel3.setText("Data:");
+        jlData.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jlData.setLabelFor(jtVlr);
+        jlData.setText("Data:");
 
-        jLabel4.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jLabel4.setLabelFor(jComboBox1);
-        jLabel4.setText("Categoria:");
+        jlCategoria.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jlCategoria.setLabelFor(jcbCat);
+        jlCategoria.setText("Categoria:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MORADIA", "SAUDE", "EDUCACAO", "ALIMENTACAO", "TRANSPORTE", "OUTROS" }));
+        jcbCat.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MORADIA", "SAUDE", "EDUCACAO", "ALIMENTACAO", "TRANSPORTE", "OUTROS" }));
 
-        jTextField3.setToolTipText("Descrição da despesa");
+        jtDesc.setToolTipText("Descrição da despesa");
 
-        jLabel5.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
-        jLabel5.setText("Valor: (R$)");
+        jlValor.setFont(new java.awt.Font("sansserif", 0, 14)); // NOI18N
+        jlValor.setText("Valor: (R$)");
 
-        jButton1.setText("Cadastrar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jbCadastrar.setText("Cadastrar");
+        jbCadastrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jbCadastrarActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Voltar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jbVoltar.setText("Voltar");
+        jbVoltar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jbVoltarActionPerformed(evt);
             }
         });
 
-        jTextField2.setForeground(java.awt.Color.gray);
-        jTextField2.setText("Ex: 2024-12-31");
-        jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
+        jtDate.setForeground(java.awt.Color.gray);
+        jtDate.setText("Ex: 2024-12-31");
+        jtDate.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField2FocusGained(evt);
+                jtDateFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField2FocusLost(evt);
+                jtDateFocusLost(evt);
             }
         });
 
-        jTextField1.setForeground(java.awt.Color.gray);
-        jTextField1.setText("Ex: 49.99");
-        jTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+        jtVlr.setForeground(java.awt.Color.gray);
+        jtVlr.setText("Ex: 49.99");
+        jtVlr.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
-                jTextField1FocusGained(evt);
+                jtVlrFocusGained(evt);
             }
             public void focusLost(java.awt.event.FocusEvent evt) {
-                jTextField1FocusLost(evt);
+                jtVlrFocusLost(evt);
             }
         });
 
@@ -157,117 +157,117 @@ public class Cadastrar extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jlCategoria)
+                            .addComponent(jlDescricao)
+                            .addComponent(jlTitulo)
+                            .addComponent(jcbCat, 0, 241, Short.MAX_VALUE)
+                            .addComponent(jtDesc))
+                        .addGap(52, 52, 52)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jlData)
+                            .addComponent(jlValor)
+                            .addComponent(jtDate, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                            .addComponent(jtVlr)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel5)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(132, 132, 132))))
+                        .addComponent(jbCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbVoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(360, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel1)
-                .addGap(29, 29, 29)
+                .addGap(31, 31, 31)
+                .addComponent(jlTitulo)
+                .addGap(81, 81, 81)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel5))
+                    .addComponent(jlDescricao)
+                    .addComponent(jlValor))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jtDesc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtVlr, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(56, 56, 56)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2))
-                .addGap(79, 79, 79)
+                    .addComponent(jlData, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jlCategoria))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(125, Short.MAX_VALUE))
+                    .addComponent(jcbCat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jtDate))
+                .addGap(118, 118, 118)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jbCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jbVoltar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(61, 61, 61))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jbVoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbVoltarActionPerformed
         // TODO add your handling code here:
         retornarMenu();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jbVoltarActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jbCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCadastrarActionPerformed
         // TODO add your handling code here:
         DespesaDAO dao = new DespesaDAO();
         Despesa despesa = new Despesa();
         
-        despesa.setDescricao(jTextField3.getText());
+        despesa.setDescricao(jtDesc.getText());
         
-        double valor = Double.parseDouble(jTextField1.getText());
+        double valor = Double.parseDouble(jtVlr.getText());
         despesa.setValor(valor);
         
-        despesa.setCategoria(Categoria.valueOf(jComboBox1.getSelectedItem().toString()));
+        despesa.setCategoria(Categoria.valueOf(jcbCat.getSelectedItem().toString()));
         
-        despesa.setData(LocalDate.parse(jTextField2.getText()));
+        despesa.setData(LocalDate.parse(jtDate.getText()));
         
          try{
              dao.save(despesa);
-             jDialog1.setLocationRelativeTo(null);
-             jDialog1.setVisible(true);
+             jdCadastroSucesso.setLocationRelativeTo(null);
+             jdCadastroSucesso.setVisible(true);
          }catch(RuntimeException e){
              System.out.print(e);
          }
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jbCadastrarActionPerformed
 
-    private void jTextField2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusGained
+    private void jtDateFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jtDateFocusGained
         // TODO add your handling code here:
-        jTextField2.setText("");
-        jTextField2.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextField2FocusGained
+        jtDate.setText("");
+        jtDate.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jtDateFocusGained
 
-    private void jTextField2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusLost
+    private void jtDateFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jtDateFocusLost
         // TODO add your handling code here:
-       if(jTextField2.getText().isEmpty()){
-         jTextField2.setText("Ex: 2024-12-31");
-         jTextField2.setForeground(Color.gray);
+       if(jtDate.getText().isEmpty()){
+         jtDate.setText("Ex: 2024-12-31");
+         jtDate.setForeground(Color.gray);
        }
-    }//GEN-LAST:event_jTextField2FocusLost
+    }//GEN-LAST:event_jtDateFocusLost
 
-    private void jTextField1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusGained
+    private void jtVlrFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jtVlrFocusGained
         // TODO add your handling code here:
-        jTextField1.setText("");
-        jTextField1.setForeground(Color.BLACK);
-    }//GEN-LAST:event_jTextField1FocusGained
+        jtVlr.setText("");
+        jtVlr.setForeground(Color.BLACK);
+    }//GEN-LAST:event_jtVlrFocusGained
 
-    private void jTextField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField1FocusLost
+    private void jtVlrFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jtVlrFocusLost
         // TODO add your handling code here:
-        if(jTextField1.getText().isEmpty()){
-            jTextField1.setText("Ex: 49.99");
-        jTextField1.setForeground(Color.gray);
+        if(jtVlr.getText().isEmpty()){
+            jtVlr.setText("Ex: 49.99");
+        jtVlr.setForeground(Color.gray);
        }
-    }//GEN-LAST:event_jTextField1FocusLost
+    }//GEN-LAST:event_jtVlrFocusLost
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jbOkCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbOkCadastroActionPerformed
         // TODO add your handling code here:
-        jDialog1.dispose();
-    }//GEN-LAST:event_jButton4ActionPerformed
+        jdCadastroSucesso.dispose();
+    }//GEN-LAST:event_jbOkCadastroActionPerformed
     
      private void retornarMenu() {
         this.dispose();        
@@ -309,20 +309,20 @@ public class Cadastrar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JDialog jDialog1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JButton jbCadastrar;
+    private javax.swing.JButton jbOkCadastro;
+    private javax.swing.JButton jbVoltar;
+    private javax.swing.JComboBox<String> jcbCat;
+    private javax.swing.JDialog jdCadastroSucesso;
+    private javax.swing.JLabel jlCategoria;
+    private javax.swing.JLabel jlData;
+    private javax.swing.JLabel jlDescricao;
+    private javax.swing.JLabel jlSucesso;
+    private javax.swing.JLabel jlTitulo;
+    private javax.swing.JLabel jlValor;
+    private javax.swing.JTextField jtDate;
+    private javax.swing.JTextField jtDesc;
+    private javax.swing.JTextField jtVlr;
     // End of variables declaration//GEN-END:variables
 
 }
