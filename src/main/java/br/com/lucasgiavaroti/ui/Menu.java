@@ -66,6 +66,11 @@ public class Menu extends javax.swing.JFrame {
         jButton3.setText("Listar");
 
         jButton4.setText("Remover");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         jLabel1.setText("Controle de Despesas");
@@ -152,6 +157,11 @@ public class Menu extends javax.swing.JFrame {
         alterar.setLocationRelativeTo(null);
         alterar.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+        abrirExcluir();
+    }//GEN-LAST:event_jButton4ActionPerformed
      public void atualizaTotal(){
          DespesaDAO dao = new DespesaDAO();
          Double valor = dao.valorTotal();
@@ -177,6 +187,11 @@ public class Menu extends javax.swing.JFrame {
     // Torna o JFrame visível
     cadastrarFrame.setVisible(true);
 }
+     private void abrirExcluir(){
+         Excluir excluirFrame = new Excluir();
+         excluirFrame.setLocationRelativeTo(null);
+         excluirFrame.setVisible(true);         
+     }
     /**
      * @param args the command line arguments
      */
