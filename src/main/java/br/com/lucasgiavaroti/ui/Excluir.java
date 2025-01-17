@@ -69,7 +69,6 @@ public class Excluir extends javax.swing.JFrame {
         jLcat = new javax.swing.JLabel();
         jBexcluir = new javax.swing.JButton();
 
-        jDialog1.setMaximumSize(new java.awt.Dimension(400, 300));
         jDialog1.setMinimumSize(new java.awt.Dimension(400, 300));
         jDialog1.setResizable(false);
 
@@ -113,7 +112,6 @@ public class Excluir extends javax.swing.JFrame {
                 .addContainerGap(126, Short.MAX_VALUE))
         );
 
-        jDialog2.setMaximumSize(new java.awt.Dimension(400, 300));
         jDialog2.setMinimumSize(new java.awt.Dimension(400, 300));
 
         jLabel1.setText("Despesa excluída com sucesso!");
@@ -149,7 +147,6 @@ public class Excluir extends javax.swing.JFrame {
                 .addContainerGap(115, Short.MAX_VALUE))
         );
 
-        jDialog3.setMaximumSize(new java.awt.Dimension(400, 300));
         jDialog3.setMinimumSize(new java.awt.Dimension(400, 300));
 
         jLabel12.setText("Por favor, verifique os campos e tente novamente.");
@@ -414,7 +411,7 @@ public class Excluir extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

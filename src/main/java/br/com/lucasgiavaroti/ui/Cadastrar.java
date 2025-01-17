@@ -72,7 +72,7 @@ public class Cadastrar extends javax.swing.JFrame {
                         .addGap(90, 90, 90)
                         .addComponent(jlSucesso))
                     .addGroup(jdCadastroSucessoLayout.createSequentialGroup()
-                        .addGap(156, 156, 156)
+                        .addGap(164, 164, 164)
                         .addComponent(jbOkCadastro)))
                 .addContainerGap(100, Short.MAX_VALUE))
         );

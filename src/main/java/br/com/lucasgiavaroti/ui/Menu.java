@@ -64,6 +64,11 @@ public class Menu extends javax.swing.JFrame {
         });
 
         jbListar.setText("Listar");
+        jbListar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbListarActionPerformed(evt);
+            }
+        });
 
         jbRemover.setText("Remover");
         jbRemover.addActionListener(new java.awt.event.ActionListener() {
@@ -84,6 +89,7 @@ public class Menu extends javax.swing.JFrame {
 
         jlRefresh.setText(" ");
         jlRefresh.setToolTipText("Atualizar valor");
+        jlRefresh.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlRefresh.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jlRefreshMouseClicked(evt);
@@ -172,6 +178,13 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
         atualizaTotal();
     }//GEN-LAST:event_jlRefreshMouseClicked
+
+    private void jbListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbListarActionPerformed
+        // TODO add your handling code here:
+        Listar listar = new Listar();
+        listar.setLocationRelativeTo(null);
+        listar.setVisible(true);
+    }//GEN-LAST:event_jbListarActionPerformed
      public void atualizaTotal(){
          DespesaDAO dao = new DespesaDAO();
          Double valor = dao.valorTotal();

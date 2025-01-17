@@ -203,6 +203,7 @@ public class Alterar extends javax.swing.JFrame {
         setTitle("Alterar");
         setMaximumSize(new java.awt.Dimension(800, 500));
         setMinimumSize(new java.awt.Dimension(800, 500));
+        setPreferredSize(new java.awt.Dimension(800, 500));
         setResizable(false);
 
         jlTitulo.setFont(new java.awt.Font("SansSerif", 0, 18)); // NOI18N
@@ -218,7 +219,7 @@ public class Alterar extends javax.swing.JFrame {
         });
 
         jlParagrafo.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jlParagrafo.setText("Por favor, atualize os campos com os novos dados: ");
+        jlParagrafo.setText("Por favor, altere os campos com os novos dados: ");
 
         jlValor.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         jlValor.setText("Valor: (R$)");
@@ -320,7 +321,7 @@ public class Alterar extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jtfDate, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jcbCat, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jbVoltar2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -356,7 +357,7 @@ public class Alterar extends javax.swing.JFrame {
             jtfValor.setText(String.valueOf(despesaOptional.get().getValor()));
             jtfValor.setVisible(true);
             
-            jcbCat.setSelectedItem(despesaOptional.get().getCategoria());
+            jcbCat.setSelectedIndex(selectComboBox(String.valueOf(despesaOptional.get().getCategoria())));
             jcbCat.setVisible(true);
             
             jbVoltar2.setVisible(true);
@@ -366,6 +367,25 @@ public class Alterar extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jbBuscarActionPerformed
 
+    private int selectComboBox (String categoria){
+        
+        int index = 0;
+        
+        if(categoria.equalsIgnoreCase("SAUDE")){
+            index = 1;
+        }else if(categoria.equalsIgnoreCase("EDUCACAO")){
+            index = 2;
+        }else if(categoria.equalsIgnoreCase("ALIMENTACAO")){
+            index = 3;
+        }else if(categoria.equalsIgnoreCase("TRANSPORTE")){
+            index = 4;
+        }else if(categoria.equalsIgnoreCase("OUTROS")){
+            index = 5;
+        }
+        
+        return index;
+    }
+    
     private void jbOkDialogo01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbOkDialogo01ActionPerformed
         // TODO add your handling code here:
         jdDespesaNaoEncontrada.dispose();
